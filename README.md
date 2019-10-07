@@ -145,7 +145,7 @@ Device (TPD1)
 
 ``` 
 
-### 键盘亮度调节映射
+### 屏幕背光亮度调节的键盘映射
 * 这部分参考了大神的帖子https://www.tonymacx86.com/threads/guide-patching-dsdt-ssdt-for-laptop-backlight-control.152659/
 * 这台机器背光调节是F6, F7。通过监控console发现这两个键点击走的是ACPI而不是PS2控制器，走的是APCI的BRT6方法。为了能让点击事件被PS2识别，我们需要改BRT6方法让它能够映射到PS2的brightness up down，这两个键分别是0x0405(F14)，0x0406(F15).
 进DSDT，找到BRT6方法。
