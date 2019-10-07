@@ -47,7 +47,7 @@ Bluetooth: 已驱动
 
 ## DSDT的补丁
 
-#### 触控板
+### 触控板
 * 这台电脑的IOnterruptSpecifier数值是0x33，但是在macOS下无法查看，所以很多同学以为打上voodool就可以完美驱动，其实并不是的，这样直接打上去还是轮询模式。
 直接怼上我改GPIO的代码，把这里整个替换TPD1,如果你的IOnterruptSpecifier也是0x33，我觉得是可以用的。
 
