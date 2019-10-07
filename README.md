@@ -184,3 +184,9 @@ Method (BRT6, 2, NotSerialized)
         
         
 ``` 
+
+## 一些说明
+* BrcmBluetoothInjector.kext 如果系统版本不是10.14.6或者以上，请屏蔽或者删除。
+* 除了FakeSMC.kext放入/kext/others，其它驱动应该放入/Library/Extensions，然后重建缓存。
+        
+        
