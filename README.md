@@ -188,5 +188,7 @@ Method (BRT6, 2, NotSerialized)
 ## 一些说明
 * BrcmBluetoothInjector.kext 如果系统版本不是10.14.6或者以上，请屏蔽或者删除。
 * 除了FakeSMC.kext放入/kext/others，其它驱动应该放入/Library/Extensions，然后重建缓存。
-        
-        
+
+### 10月28日
+刚刚发现SSDT-Dell-FN.aml这个热补丁就是修复亮度调节键盘映射的，看来以后还是要多学习，少走弯路造重复的轮子。
+新建了一个/Others文件夹，把它放在里面了。
