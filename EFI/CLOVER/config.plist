@@ -510,7 +510,7 @@
 		<key>Arguments</key>
 		<string>dart=0 darkwake=8 nv_disable=1 -cdfon brcmfx-country=#a</string>
 		<key>DefaultVolume</key>
-		<string>Macintosh HD</string>
+		<string>LastBootedVolume</string>
 		<key>HibernationFixup</key>
 		<true/>
 		<key>Log</key>
